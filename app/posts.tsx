@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { AppBskyFeedGetAuthorFeed, AppBskyFeedGetPosts, AtpAgent } from "@atproto/api";
 import { PostView } from "@atproto/api/dist/client/types/app/bsky/feed/defs";
 
@@ -21,12 +20,9 @@ export default async function Posts() {
   return (
     <div>
       {allPosts.map((post: PostView) => (
-        <Card key={post.uri}>
-            <CardContent>
-                <h3>{post.replyCount}</h3>
-                <p>{post.author.displayName}</p>
-            </CardContent>
-        </Card>
+        <div key={post.uri}>
+          <h2>{post.indexedAt}</h2>
+        </div>
       ))}
     </div>
   );
