@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+body {
+    background-color: black;
+    background-image: url('/cross-stripes.png');
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
