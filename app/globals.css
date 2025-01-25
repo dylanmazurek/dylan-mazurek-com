@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-    --bg-color: #183061;
+    --bg-color: #0d1b36;
     --bg-image: url('/bg.svg');
     --primary-color: #3182ce;
     --secondary-color: #2c5282;
