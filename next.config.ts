@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/dylan-mazurek-com",
+  basePath: process.env.NODE_ENV === "production" ? "/test/" : undefined,
   output: "export",
   reactStrictMode: true,
 };

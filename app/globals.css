@@ -1,8 +1,15 @@
 @import "tailwindcss";
 
-body {
-    background-color: black;
-    background-image: url('/cross-stripes.png');
-    font-family: 'Inter', sans-serif;
-    color: white;
+@theme {
+    --bg-color: #183061;
+    --bg-image: url('/bg.svg');
+    --primary-color: #3182ce;
+    --secondary-color: #2c5282;
+    --font-color: #e2e8f0;
+}
+
+:root {
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    color: var(--font-color);
 }
