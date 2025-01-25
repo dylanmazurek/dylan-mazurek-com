@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from 'next/font/google';
 import "./globals.css";
 
-export const roboto = Roboto({ subsets: ["latin"], weight: "400", style: "normal" });
+const roboto = Roboto({ subsets: ["latin"], weight: "400", style: "normal", display: "swap" });
 
 export const metadata: Metadata = {
     title: "Dylan Mazurek",
@@ -17,7 +17,6 @@ export default function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
-    metadata: Metadata;
 }>) {
     return (
         <html lang="en" className={roboto.className}>

@@ -1,7 +1,7 @@
 import { Domine } from 'next/font/google';
 import Footer from "./footer";
 
-export const domine = Domine({ subsets: ['latin'] });
+const domine = Domine({ subsets: ['latin'], display: "swap" });
 
 export default function Home() {
     return (
