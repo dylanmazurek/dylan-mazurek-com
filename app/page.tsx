@@ -1,5 +1,6 @@
 import { Domine } from 'next/font/google';
 import Footer from "./footer";
+import Projects from './projects';
 
 const domine = Domine({ subsets: ['latin'], display: "swap" });
 
@@ -11,6 +12,7 @@ export default function Home() {
                 <p className="text-lg">
                     Hi! I&apos;m Dylan Mazurek, a software engineer and musical theatre performer based in Melbourne, Australia.
                 </p>
+                <Projects />
                 {/* <Posts /> */}
             </main>
             <Footer />
